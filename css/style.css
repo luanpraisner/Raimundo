@@ -488,3 +488,30 @@ img {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
+/* CARROSSEL RESULTADOS */
+#carouselResultados .carousel-item {
+    padding: 10px 0;
+}
+
+/* Deixa os botões mais visíveis */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0a2540;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    #carouselResultados .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carouselResultados .col-md-5 {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
