@@ -1,0 +1,462 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Azul escuro personalizado */
+.bg-darkblue {
+    background: #0a2540;
+}
+
+.btn-darkblue {
+    background: #0a2540;
+    color: white;
+}
+
+.btn-darkblue:hover {
+    background: #133b63;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #0a2540, #133b63);
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+/* RESULTADOS */
+.box-result {
+    height: 200px;
+    background: #ccc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input,
+textarea {
+    border-radius: 10px !important;
+}
+
+.bg-darkblue {
+    background: #0a2540;
+    transition: 0.3s;
+}
+
+/* Hover nos links */
+.nav-link {
+    position: relative;
+    color: white !important;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+/* Navbar ao rolar */
+.navbar.scrolled {
+    background: #061a2e !important;
+}
+
+.orcamento-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.orcamento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-bar {
+    background: #0a2540;
+    /* azul mais claro */
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Itens */
+.contact-item {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.contact-item span {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.contact-item strong {
+    font-size: 16px;
+}
+
+/* Divisórias */
+.divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+/* CARD */
+.resultado-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.resultado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER DA IMAGEM */
+.img-container {
+    position: relative;
+}
+
+/* IMAGEM */
+.img-container img {
+    width: 100%;
+    display: block;
+}
+
+/* TEXTO EM CIMA */
+.label-img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(10, 37, 64, 0.9);
+    /* azul do seu site */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* CARD SERVIÇOS */
+.service-card {
+    max-width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGEM */
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BADGE EM CIMA */
+.badge-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #0a2540;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* TEXTO */
+.service-card .card-body {
+    padding: 20px;
+}
+
+.service-card h5 {
+    margin-bottom: 10px;
+    color: #0a2540;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* ===== RESPONSIVIDADE GERAL ===== */
+
+/* HERO MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 120px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+/* NAVBAR MOBILE */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: #0a2540;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* SERVIÇOS - CARDS */
+@media (max-width: 768px) {
+    .service-card {
+        max-width: 100%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* RESULTADOS (ANTES/DEPOIS) */
+@media (max-width: 768px) {
+    #resultados .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #resultados .col-md-5 {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* ORÇAMENTO */
+@media (max-width: 768px) {
+    .orcamento-card {
+        padding: 30px 20px !important;
+    }
+
+    .orcamento-card h2 {
+        font-size: 22px;
+    }
+}
+
+/* CONTATO */
+@media (max-width: 768px) {
+    .contact-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* IMAGENS RESPONSIVAS */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CONTAINER AJUSTE */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* BOTÕES */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+/* HERO */
+.hero-custom {
+    position: relative;
+    height: 100vh;
+    background: url('../image/sofa.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* CAMADA ESCURA */
+.hero-custom .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    left: 0;
+}
+
+/* CONTEÚDO */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+/* LOGO */
+.hero-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* SUBTEXTO */
+.hero-sub {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ÍCONES */
+.hero-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.hero-icons .item {
+    text-align: center;
+    max-width: 100px;
+}
+
+.hero-icons img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.hero-icons span {
+    font-size: 13px;
+}
+
+/* BOTÃO */
+.btn-hero {
+    display: inline-block;
+    margin-top: 30px;
+    background: #2ecc71;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background: #27ae60;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .hero-custom {
+        height: auto;
+        padding: 120px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    .hero-icons {
+        gap: 20px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-icons .item {
+        max-width: 80px;
+    }
+
+    .hero-icons img {
+        width: 30px;
+    }
+
+    .btn-hero {
+        width: 100%;
+        text-align: center;
+    }
+}
