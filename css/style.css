@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Azul escuro personalizado */
@@ -236,6 +236,12 @@ textarea {
     color: #555;
 }
 
+a {
+    color: inherit;
+    /* Mantém a cor do texto normal */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
 
 /* ===== RESPONSIVIDADE GERAL ===== */
 
